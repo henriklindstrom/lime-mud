@@ -35,7 +35,7 @@ function _move(exit) {
             console.log('error!');
         }
     };
-    request.open('POST', 'https://mud.lime.test/mud/lime-mud/move/');
+    request.open('POST', '/mud/lime-mud/move/');
     request.setRequestHeader('Content-Type', 'application/json');
     console.log("sending move", {exit})
     request.send(JSON.stringify({exit}))
